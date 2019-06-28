@@ -1,0 +1,22 @@
+{
+  "name": "release-site",
+  "version": "1.0.0",
+  "description": "Project release site",
+  "homepage": "https://github.com/afeiship/release-site",
+  "author": {
+    "name": "afei",
+    "email": "1290657123@qq.com"
+  },
+  "scripts": {
+    "dev": "nodemon ./app.js",
+    "start": "node ./app.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "serve-index": "^1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}

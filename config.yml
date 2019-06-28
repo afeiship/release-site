@@ -1,0 +1,6 @@
+source
+  dir: /home/fzheng/gitlab
+  file: *.tar.gz
+
+local
+  dir: releases
