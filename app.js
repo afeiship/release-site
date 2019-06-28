@@ -5,7 +5,7 @@ const portNumber = 3000;
 const sourceDir = 'releases';
 
 // middlewares:
-app.use(express.static('/releases'));
+app.use(express.static('releases'));
 app.use(
   '/',
   serveIndex(__dirname + '/releases', {
