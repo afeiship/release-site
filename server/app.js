@@ -1,15 +1,16 @@
 const express = require('express');
 const { resolve } = require('path');
+const config = require('../config.json');
 const serveIndex = require('serve-index');
 const app = express();
-const portNumber = 3000;
-const sourceDir = 'releases';
+const portNumber = config.port;
+const sourceDir = config.dir;
 
 // middlewares:
-app.use(express.static('/Users/feizheng/Downloads'));
+app.use(express.static(sourceDir));
 app.use(
   '/',
-  serveIndex('/Users/feizheng/Downloads', {
+  serveIndex(sourceDir, {
     stylesheet: resolve(__dirname, '../server/style.css')
   })
 );
