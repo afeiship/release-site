@@ -11,7 +11,7 @@ li {
 }
 
 .directory {
-  width: 800px;
+  max-width: 1080px;
   padding: 20px;
   border: 1px dashed #ccc;
   margin: 40px auto 0;
@@ -35,7 +35,7 @@ li {
 
 .directory .view-tiles li a {
   font-family: PingFangSC-Light;
-  font-size: 14px;
+  font-size: 12px;
   padding-left: 10px;
   border-left: 3px solid #007aff;
   height: 30px;
@@ -64,6 +64,12 @@ li {
 }
 
 .directory .view-tiles li a span.name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
   width: 50%;
 }
 

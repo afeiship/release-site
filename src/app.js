@@ -6,10 +6,10 @@ const portNumber = 3000;
 const sourceDir = 'releases';
 
 // middlewares:
-app.use(express.static('releases'));
+app.use(express.static('/Users/feizheng/Downloads'));
 app.use(
   '/',
-  serveIndex(resolve(__dirname, '../releases'), {
+  serveIndex('/Users/feizheng/Downloads', {
     stylesheet: resolve(__dirname, '../server/style.css')
   })
 );
