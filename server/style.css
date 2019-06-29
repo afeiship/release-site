@@ -24,7 +24,13 @@ li {
 
 .directory #search {
   width: 100%;
+  height: 40px;
   padding: 5px 10px;
+}
+
+.directory #search:hover, .directory #search:focus {
+  outline: none;
+  border: 1px solid #007aff;
 }
 
 .directory .view-tiles li a {
@@ -50,7 +56,6 @@ li {
 
 .directory .view-tiles li a:hover {
   background: #eee;
-  text-decoration: underline;
 }
 
 .directory .view-tiles li a span {
