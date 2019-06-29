@@ -1,4 +1,5 @@
 const express = require('express');
+const { resolve } = require('path');
 const serveIndex = require('serve-index');
 const app = express();
 const portNumber = 3000;
@@ -8,8 +9,8 @@ const sourceDir = 'releases';
 app.use(express.static('releases'));
 app.use(
   '/',
-  serveIndex(__dirname + '/releases', {
-    icons: true
+  serveIndex(resolve(__dirname, '../releases'), {
+    stylesheet: resolve(__dirname, '../server/style.css')
   })
 );
 

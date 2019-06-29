@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+.directory {
+  width: 800px;
+  padding: 20px;
+  border: 1px dashed #ccc;
+  margin: 40px auto 0;
+}
+
+.directory h1 {
+  font-size: 18px;
+  margin: 18px auto;
+}
+
+.directory #search {
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.directory .view-tiles li a {
+  font-family: PingFangSC-Light;
+  font-size: 14px;
+  padding-left: 10px;
+  border-left: 3px solid #007aff;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  display: block;
+  background: #fff;
+}
+
+.directory .view-tiles li a.highlight {
+  background: #f60;
+  color: #fff;
+}
+
+.directory .view-tiles li a.highlight:hover {
+  background: #cc5200;
+}
+
+.directory .view-tiles li a:hover {
+  background: #eee;
+  text-decoration: underline;
+}
+
+.directory .view-tiles li a span {
+  float: left;
+  display: block;
+}
+
+.directory .view-tiles li a span.name {
+  width: 50%;
+}
+
+.directory .view-tiles li a span.size {
+  color: #666;
+  width: 20%;
+  text-align: right;
+}
+
+.directory .view-tiles li a span.date {
+  color: #999;
+  text-align: right;
+  width: 30%;
+}

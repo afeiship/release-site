@@ -8,8 +8,8 @@
     "email": "1290657123@qq.com"
   },
   "scripts": {
-    "dev": "nodemon ./app.js",
-    "start": "node ./app.js"
+    "dev": "nodemon ./src/app.js",
+    "start": "node ./src/app.js"
   },
   "license": "MIT",
   "dependencies": {
@@ -17,6 +17,10 @@
     "serve-index": "^1.9.1"
   },
   "devDependencies": {
+    "del": "^4.1.1",
+    "gulp": "^4.0.2",
+    "gulp-load-plugins": "^1.6.0",
+    "gulp-sass": "^4.0.2",
     "nodemon": "^1.19.1"
   }
 }
