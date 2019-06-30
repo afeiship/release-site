@@ -36,7 +36,7 @@ li {
       a {
         font-family: PingFangSC-Light;
         font-size: 12px;
-        padding-left: 10px;
+        // padding-left: 10px;
         border-left: 3px solid #007aff;
         height: 30px;
         line-height: 30px;
@@ -58,7 +58,10 @@ li {
         span {
           float: left;
           display: block;
+          border-bottom: 1px solid #eee;
           &.name {
+            color: #333;
+            padding-left: 10px;
             overflow: hidden;
             text-overflow: ellipsis;
             display: flex;
