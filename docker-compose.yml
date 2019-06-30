@@ -1,0 +1,13 @@
+version: '3'
+services:
+  nodejs:
+    image: hub.c.163.com/lightingfire/nodejs:6.9.1-alpine
+    ports:
+      - "3000:3000"
+    container_name: release-site
+    working_dir: /home/node/app
+    volumes:
+      - .:/home/node/app
+      - ./node_modules:/home/node/app/node_modules
+      - ${RELEASE_SITE_DIR:-~/.ssh}:/data
+    command: npm run start
