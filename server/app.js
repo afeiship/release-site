@@ -2,7 +2,7 @@ const express = require('express');
 const { resolve } = require('path');
 const serveIndex = require('serve-index');
 const app = express();
-const config = { dir: '/data', port: 3000 };
+const config = { dir: '/data', port: process.env.RELEASE_SITE_PORT || 3000 };
 const portNumber = config.port;
 const sourceDir = config.dir;
 
