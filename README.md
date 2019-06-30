@@ -17,3 +17,8 @@
 RELEASE_SITE_PORT=3001
 RELEASE_SITE_DIR=/Users/feizheng/github/release-site/server
 ```
+
+## debug
+```shell
+docker-compose logs
+```
