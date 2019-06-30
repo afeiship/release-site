@@ -3,7 +3,7 @@ services:
   nodejs:
     image: hub.c.163.com/lightingfire/nodejs:6.9.1-alpine
     ports:
-      - "3000:3000"
+      - "${RELEASE_SITE_PORT}:3000"
     container_name: release-site
     working_dir: /home/node/app
     volumes:
